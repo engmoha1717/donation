@@ -1,0 +1,40 @@
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 6px;
+    box-shadow: 7px 4px 30px red;
+}
+.form{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-align: left;
+  }
+  
+  .control input,
+  .control textarea {
+    font: inherit;
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #dcfff9;
+  }
+  .btn {
+    background: transparent;
+    box-shadow: 7px 2px 20px red;
+    padding: 0.4rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }

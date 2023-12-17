@@ -1,0 +1,83 @@
+.container {
+    background-color: rgb(178, 67, 11);
+    margin: 15px auto;
+    max-width: 660px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 23px 40px 10px rgba(138, 13, 13, 1.15);
+    animation: meals-appear 1s ease-out forwards;
+}
+
+.detail {
+    display: flex;
+    gap: 12px;
+    text-align: left;
+}
+
+.detail img {
+    width: 300px;
+}
+
+@keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+@media only screen and (max-width: 668px) {
+    .container {
+        width: 50%;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .detail {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: .2rem;
+        background-color: rgb(226, 39, 39);
+    }
+
+    .detail img {
+        width: 100%;
+        border-radius: 12rem;
+        
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

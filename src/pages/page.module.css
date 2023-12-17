@@ -1,0 +1,90 @@
+.section {
+    width: 100%;
+}
+
+.donor {
+    width: 100%;
+    height: 306px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: meals-appear 1s ease-in-out forwards;    
+}
+
+.donorlist {
+    background-color: rgb(241, 79, 79);
+    border-radius: 4px;
+    margin: 6px;
+    padding: 0;
+    width: 20%;
+    box-shadow: 7px 14px 30px red;
+}
+
+.donorlist img {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+.listdetail {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 2px;
+}
+
+@keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+/* @media screen code  */
+@media only screen and (max-width: 580px) {
+
+    /* For mobile phones: */
+    .donor
+    {
+        
+        padding: 0;
+        margin: 0;
+        }
+    .donorlist {
+        padding: 0;
+        margin: 4px;
+        width: 80%;
+    }
+    .donorlist img{
+        width: 100%;
+       
+        }
+}
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+    /* For tablets: */
+    .donorlist {
+        width: 38%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* For desktop: */
+    .donorlist {
+        width: 31.33333333%;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* For desktop: */
+    .donorlist {
+        width: 25%;
+    }
+}
